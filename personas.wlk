@@ -8,9 +8,9 @@ object estefania{
 }
 
 object luisa{
-    method leGusta(unaCosa) = unaCosa.peso() <= 2000
+    method leGusta(unaCosa) = unaCosa.material().esBrilllante()
 }
 
 object juan{
-    method leGusta(unaCosa) = unaCosa.peso() <= 2000
+    method leGusta(unaCosa) = not (unaCosa.color().esFuerte()) or unaCosa.peso().between(1200,1800)
 }
